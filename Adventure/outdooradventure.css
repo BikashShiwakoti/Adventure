@@ -1,0 +1,167 @@
+/* Author:Bikash Shiwakoti, 000891600 */
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    max-width: 100%;
+}
+#gcontainer{
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "one two three";
+    align-items: center;
+}
+.one{
+    display: flex;
+    list-style: none;
+    margin: 1px;
+    grid-area: one;
+}
+.one > ul{
+    display: flex;
+    list-style-type: none;
+}
+.one >ul > li {
+    text-decoration: none; 
+} 
+.one > ul > li >a{
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 2px 7px;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    background-color: #0172BA;
+    padding: 5px 10px;
+    cursor: alias;
+}
+.one > ul > li > a:hover{
+    background-color: #089247;
+}
+.two{
+    justify-self: center;
+    align-self: center;
+    grid-area: two;
+    display: flex;
+}
+.two img{
+    height: 150px;
+    width: 150px;
+    justify-self: center;
+}
+.three{
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+}
+.three > a > img{
+    margin-right: 5px;
+}
+#navbar{
+    position: sticky;
+    top: -1px;
+}
+#navbar > ul{
+    height: 70px;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    background-color: #CEECFE;
+    border-top: 2px solid #0172BA;
+    border-bottom: 2px solid #0172BA;
+    justify-content: center;
+    align-items: center;
+}
+#navbar > ul > li >a{
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+    margin: 15px;
+    padding: 5px 14px;
+    background-color: white;
+    color: #CEECFE;
+    border: 1px solid #0172BA ;
+    border-width: 2px;
+    border-radius: 20px;
+}
+#navbar > ul > li > a:hover{
+    background-color: #003557;
+}
+footer{
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: min-content auto auto auto auto;
+    grid-template-rows: auto auto;
+    align-content: end;
+    grid-template-areas: "image li1 li2 li3 li4" "img li5 li6 li7 empty";
+    grid-auto-flow: row;
+    border-top: 1px solid #0172BA;
+    background-color: #CEECFE;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #0172BA;
+}
+.image{
+    grid-area: image;
+    grid-row: span 2;
+} 
+.star{
+    text-align: start;
+    border-bottom: 1px solid #0172BA;
+    margin-right: 1em;
+}
+.li1{
+    grid-area: li1;
+    padding-left: 1em;
+}
+.li1 >ul {
+    list-style-type: none;
+}
+.li2{
+    grid-area: li2;
+}
+.li2 >ul {
+    list-style-type: none;
+}
+.li3{
+    grid-area: li3;
+}
+.li3 >ul {
+    list-style-type: none;
+}
+.li4{
+    grid-area: li4;
+}
+.li4 >ul {
+    list-style-type: none;
+}
+.star2{
+    text-align: start;
+    border-bottom: 2px solid #0172BA;
+    margin-right: 1em;
+    margin-top: 1.5em;
+}
+.li5{
+    grid-area: li5;
+}
+.li5 >ul {
+    list-style-type: none;
+}
+.li6{
+    grid-area: li6;
+}
+.li6 >ul {
+    list-style-type: none;
+}
+.li7{
+    grid-area: li7;
+}
+.li7 >ul {
+    list-style-type: none;
+}
